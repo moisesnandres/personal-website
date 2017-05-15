@@ -1,0 +1,8 @@
+@media screen and (min-width: 640px) {
+  .me__social__networks {
+    flex-wrap: nowrap;
+    li + li {
+      margin-left: 1em;
+    }
+  }
+}
