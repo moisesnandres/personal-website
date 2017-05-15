@@ -8,10 +8,7 @@ html {
 body {
   background-color: #f1f1f1;
   color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -59,6 +56,10 @@ a {
   align-items: center;
 }
 
+.me__description {
+  margin: 0;
+}
+
 .me__photo {
   width: 180px;
   height: 180px;
@@ -71,16 +72,22 @@ a {
   display: flex;
   text-align: center;
 
+  li + li {
+    margin-left: 1em;
+  }
+
   a {
     display: block;
     padding: 1em;
-    &+ a {
-      margin-left: 1em;
+    transition: opacity .6s ease-in-out;
+
+    &:hover {
+      opacity: .5;
     }
   }
 
   h4 {
-    margin-bottom: 0px;
+    margin: .7em 0em;
   }
 
   .fa {
