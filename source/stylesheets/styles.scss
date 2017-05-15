@@ -45,7 +45,7 @@ a {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 2em;
+  padding: 1.3em;
 }
 
 .me {
@@ -54,6 +54,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .me__description {
@@ -89,7 +90,7 @@ a {
   }
 
   h4 {
-    margin: .7em 0em;
+    margin: .7em 0 0;
   }
 
   .fa {
