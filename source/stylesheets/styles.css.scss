@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #f1f1f1;
   color: #333;
@@ -6,6 +13,17 @@ body {
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .index {
@@ -20,4 +38,57 @@ body {
       width: 100%;
     }
   }
+}
+
+.home {
+  min-height: 100vh;
+  background-color: #292d35;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.me {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.me__photo {
+  width: 180px;
+  height: 180px;
+  img {
+    width: 100%;
+  }
+}
+
+.me__social__networks {
+  display: flex;
+  text-align: center;
+
+  a {
+    display: block;
+    padding: 1em;
+    &+ a {
+      margin-left: 1em;
+    }
+  }
+
+  h4 {
+    margin-bottom: 0px;
+  }
+
+  .fa {
+    font-size: 1.3em;
+  }
+}
+
+
+.circle {
+  border-radius: 50%;
 }
