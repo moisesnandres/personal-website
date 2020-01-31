@@ -1,17 +1,27 @@
-import Layout from '../layouts/Main';
-import Me from '../components/Me';
-import SocialNetwork from '../components/SocialNetwork';
+import Layout from "../layouts/Main";
+import Me from "../components/Me";
+import SocialNetwork from "../components/SocialNetwork";
 
 export default () => (
   <Layout>
     <div>
       <Me />
       <ul>
-        <SocialNetwork link="https://github.com/moisesnandres" icon="github" name="GitHub" />
-        <SocialNetwork link="https://linkedin.com/in/moisesnandres" icon="linkedin-in" name="LinkedIn" />
-        <SocialNetwork link="https://medium.com/@moisesnandres" icon="medium-m" name="Medium" />
-        <SocialNetwork link="https://twitter.com/moisesnandres" icon="twitter" name="Twitter" />
-        <SocialNetwork link="https://instagram.com/moisesnandres" icon="instagram" name="Instagram" />
+        <SocialNetwork
+          link="https://github.com/moisesnandres"
+          icon="github"
+          name="GitHub"
+        />
+        <SocialNetwork
+          link="https://linkedin.com/in/moisesnandres"
+          icon="linkedin-in"
+          name="LinkedIn"
+        />
+        <SocialNetwork
+          link="https://twitter.com/moisesnandres"
+          icon="twitter"
+          name="Twitter"
+        />
       </ul>
     </div>
     <style jsx>{`
@@ -31,4 +41,4 @@ export default () => (
       }
     `}</style>
   </Layout>
-)
+);
